@@ -2,7 +2,7 @@ import React from "react";
 
 function Addflat() {
     return (
-      <div className = "addflat">
+      <div>
         <h1>ADD A FLAT</h1>;
       </div>
     );
