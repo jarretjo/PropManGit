@@ -25,7 +25,7 @@ export default function App() {
   const [title, setTitle] = useState("This is a success alert")
   return (
     <div>
-     {/* <div className="App"> <Sidebar /></div>*/}
+     {/* <div className="App"> gbcxvbxcvb<Sidebar /></div>*/}
       <div><Fruits /></div>
       </div>
   );
