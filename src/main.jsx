@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from './App.jsx';
-import Addblock from "./pages/Addblock.jsx";
-import Addflat from "./pages/Addflat.jsx";
+import Addblock from "./routes/Addblock.jsx";
+import Addflat from "./routes/Addflat.jsx";
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from "react-router";
-import NotFoundPage from "./pages/NotFoundPage";
+import NotFoundPage from "./routes/NotFoundPage";
 import { Outlet } from 'react-router-dom';
 
 //const root = document.getElementById("root");

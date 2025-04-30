@@ -1,6 +1,7 @@
 import React from "react"
 import "../App.css"
 import {SidebarData} from "./SidebarData"
+import { Navigate } from "react-router";
 
 
 function Sidebar() {
@@ -14,8 +15,10 @@ function Sidebar() {
                     className="row"
                     if={window.location.pathname == val.link ? "active" : ""}
                     onClick={() => {
-                        window.location.pathname = val.link;
-                    }}
+                       window.location.pathname = val.link;
+                    }} 
+                  
+                 /* onClick={() => {console.log('I worked!!')}} */
                 >
                 <div id="icon">{val.icon}</div>
                 <div id="title">{val.title}</div>

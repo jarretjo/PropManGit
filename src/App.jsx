@@ -5,10 +5,11 @@ import { createRoot } from "react-dom/client";
 import Topbar from "./components/Topbar";
 import Sidebar from "./components/Sidebar";
 //import { Link } from "react-router-dom";
-import Addblock from "./pages/Addblock";
-import Addflat from "./pages/Addflat";
+import Addblock from "./routes/Addblock";
+import Addflat from "./routes/Addflat";
 import Navbar from "./components/Navbar";
 import ReactJsAlert from "reactjs-alert";
+import Fruits from "./components/Fruits";
 //import  BrowserRouter from 'react-router-dom';
 //mport { Router } from 'express'
 import {
@@ -21,26 +22,11 @@ import {
 export default function App() {
   const [status, setStatus] = useState(false);
   const [type, setType] = useState("success");
-  const [title, setTitle] = useState("This is a success alert");
+  const [title, setTitle] = useState("This is a success alert")
   return (
-    <div className="App">
-    {/*  <Topbar /> */}
-    <button
-        onClick={() => {
-          setStatus(true);
-          setType("success");
-          setTitle("This is a success alert");
-        }}
-      >
-        Show Alert
-      </button>
-      <ReactJsAlert
-        status={status}
-        type={type}
-        title={title}
-        Close={() => setStatus(false)}
-      />
-      <Sidebar />
-    </div>
+    <div>
+     {/* <div className="App"> <Sidebar /></div>*/}
+      <div><Fruits /></div>
+      </div>
   );
 }
